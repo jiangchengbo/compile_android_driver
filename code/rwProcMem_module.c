@@ -348,7 +348,7 @@ static int rwProcMem_dev_init(void) {
 	//test4();
 	//test5();
 #else
-	printk(KERN_EMERG "Hello\n");
+	printk(KERN_EMERG "My JCB Memory Hello\n");
 #endif
 	return 0;
 }
@@ -367,7 +367,7 @@ static void rwProcMem_dev_exit(void) {
 	stop_hide_procfs_dir();
 #endif
 	kfree(g_rwProcMem_devp);
-	printk(KERN_EMERG "Goodbye\n");
+	printk(KERN_EMERG "My JCB Memory Goodbye\n");
 }
 
 int __init init_module(void) {
